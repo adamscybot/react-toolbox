@@ -40,7 +40,7 @@ class DatePicker extends React.Component {
           ref='input'
           className={style.input}
           onMouseDown={this.handleMouseDown}
-          placeholder='Pick up date'
+          placeholder={this.props.placeholder}
           readOnly={true}
           type='text'
           value={this.state.value ? this.formatDate(this.state.value) : null}

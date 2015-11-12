@@ -42,7 +42,7 @@ class TimePicker extends React.Component {
           ref='input'
           className={style.input}
           onMouseDown={this.openTimeDialog}
-          placeholder='Pick up time'
+          placeholder={this.props.placeholder}
           readOnly={true}
           type='text'
           value={this.formatTime()}
